@@ -11,8 +11,8 @@ def jogar_adedonha():
         # Adicione mais categorias conforme desejado
     }
 
-    jogador = input("Digite o nome do jogador: ")
-    rodadas = int(input("Quantas rodadas você deseja jogar? "))
+    jogador = st.text_input("Digite o nome do jogador: ")
+    rodadas = int(st.text_input("Quantas rodadas você deseja jogar? "))
 
     pontos_jogador = 0
 
