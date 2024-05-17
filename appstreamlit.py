@@ -23,7 +23,7 @@ def jogar_adedonha():
     
     while tentativas > 0:
         print("Palavra atual:", " ".join(letras_descobertas))
-        palpite = input("Digite uma letra ou a palavra completa: ").upper()
+        palpite = st.text_input("Digite uma letra ou a palavra completa: ").upper()
         
         if len(palpite) == 1:
             if palpite in palavra:
