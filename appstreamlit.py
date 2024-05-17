@@ -22,9 +22,9 @@ def jogar_adedonha():
     tentativas_restantes = 3
     letras_descobertas = ["_"] * len(palavra)
 
-    while tentativas_restantes > 0 and "_" in letras_descobertas:
-        palpite = st.text_input("Digite uma letra ou a palavra completa:").upper()
+    palpite = st.text_input("Digite uma letra ou a palavra completa:").upper()
 
+    while tentativas_restantes > 0 and "_" in letras_descobertas:
         if len(palpite) == 1:
             if palpite in palavra:
                 st.write("Letra correta!")
